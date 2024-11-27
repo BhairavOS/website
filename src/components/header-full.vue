@@ -3,7 +3,7 @@
     <nav class="header-full-nav">
       <div class="header-full-container1">
         <router-link to="/" class="header-full-navlink1 Large">
-          Soft UI Design System
+          Bhairav
         </router-link>
         <div class="header-full-menu">
           <router-link to="/" class="header-full-navlink2 Large">

@@ -3,7 +3,7 @@
     <nav class="header-nav">
       <div class="header-container1">
         <router-link to="/" class="header-navlink1 Large">
-          Soft UI Design System
+          Bhairav
         </router-link>
         <div class="header-menu1">
           <router-link to="/" class="header-navlink2 Large">Home</router-link>
@@ -31,7 +31,7 @@
     <div data-role="MobileMenu" class="header-mobile-menu">
       <div class="header-top">
         <router-link to="/" class="header-navlink5 Large">
-          Soft UI Design System
+          Bhairav
         </router-link>
         <div data-role="CloseMobileMenu" class="header-close-menu">
           <svg viewBox="0 0 1024 1024" class="header-icon3">
