@@ -20,7 +20,7 @@ export default {
     },
     text: {
       type: String,
-      default: 'Get the latest design ideas and turn it into reality.',
+      default: 'Our system promotes a collaborative environment in which collective brilliance results in ground-breaking ideas.',
     },
     newProp: {
       type: String,

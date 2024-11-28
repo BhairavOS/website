@@ -5,13 +5,13 @@
       <div class="home-container11">
         <div class="home-card">
           <h1 class="home-text10 HeadingOne">Bhairav</h1>
-          <h1 class="home-text11 HeadingOne">Power Your Potential </h1>
+          <h1 class="home-text11 HeadingOne">"Innovative Independent OS"</h1>
           <span class="home-text12 Lead">
             <span>
-              Elevate your interface with BhairavOs - where elegance meets acceleration. 
+              Bhairav OS is a new operating system, built from scratch with its own design. 
               <span v-html="raw7zdb"></span>
             </span>
-            <span>system and all the work that make this design available.</span>
+            <span>It’s independent of Linux, Unix, or Windows and focuses on being stable, efficient, and secure.</span>
           </span>
           <div class="home-container12">
             <div class="home-container13">
@@ -47,18 +47,18 @@
     <img alt="image" src="/curved6-1500h.jpg" class="home-image14" />
     <section class="home-features">
       <feature-card
-        text="Choose the best design system for your next product."
+        text="Harness the robust structure of Bhairav OS to tailor experiences without compromising on stability."
         title="Components"
         imageSrc="/cube1.svg"
       ></feature-card>
       <feature-card imageSrc="/person1.svg"></feature-card>
       <feature-card
-        text="Make your code easier to maintain using variables."
+        text="Designed for speed and efficiency, our system propels your applications to new heights, ensuring they run smoothly and respond swiftly to user interactions."
         title="Less Code"
         imageSrc="/rocket1.svg"
       ></feature-card>
       <feature-card
-        text="This design system is fully supported on any device."
+        text="Experience a design system that's not only fully supported on any device but also optimized for cross-platform functionality."
         title="Fully Responsive"
         imageSrc="/credit%20card1.svg"
       ></feature-card>
