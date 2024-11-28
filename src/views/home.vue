@@ -5,7 +5,7 @@
       <div class="home-container11">
         <div class="home-card">
           <h1 class="home-text10 HeadingOne">Bhairav</h1>
-          <h1 class="home-text11 HeadingOne">"Innovative Independent OS"</h1>
+          <h1 class="home-text11 HeadingOne">Innovative Independent OS</h1>
           <span class="home-text12 Lead">
             <span>
               Bhairav OS is a new operating system, built from scratch with its own design. 
