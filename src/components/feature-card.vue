@@ -24,7 +24,7 @@ export default {
     },
     newProp: {
       type: String,
-      default: 'Design',
+      default: 'Collaborative Creativity',
     },
   },
 }
