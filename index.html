@@ -1,0 +1,175 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhairav OS - Under Construction</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: radial-gradient(circle at center, #1a001d, #020003);
+      color: #ffffff;
+      font-family: 'Arial', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #bhairav-head {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      opacity: 0.9;
+      filter: drop-shadow(0 0 20px #ff4500);
+      z-index: 10;
+    }
+
+    h1 {
+      position: absolute;
+      top: 10%;
+      font-size: 3.5rem;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: #ff4500;
+      text-shadow: 0 0 15px #ff4500, 0 0 30px #ff6347, 0 0 50px #ff7f50;
+      animation: flicker 1.5s infinite alternate;
+    }
+
+    p {
+      position: absolute;
+      bottom: 10%;
+      font-size: 1.5rem;
+      color: #ffa07a;
+      opacity: 0.8;
+    }
+
+    @keyframes flicker {
+      0%, 100% {
+        opacity: 1;
+        text-shadow: 0 0 20px #ff4500, 0 0 40px #ff6347, 0 0 60px #ff7f50;
+      }
+      50% {
+        opacity: 0.85;
+        text-shadow: 0 0 10px #ff4500, 0 0 25px #ff6347, 0 0 40px #ff7f50;
+      }
+    }
+
+    .particle {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: radial-gradient(circle, #ff4500, transparent);
+      border-radius: 50%;
+      animation: float 5s infinite linear;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img id="bhairav-head" src="https://github.com/BhairavOS/website/blob/main/viber_image_2024-11-26_19-08-32-009-removebg-preview.png?raw=true" alt="Bhairav Head">
+    <h1>Bhairav OS</h1>
+    <p>Our masterpiece is brewing. Stay tuned!</p>
+  </div>
+
+  <script>
+    // Add particles dynamically
+    const createParticles = (count = 100) => {
+      const container = document.querySelector('.container');
+      for (let i = 0; i < count; i++) {
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+        particle.style.left = Math.random() * 100 + 'vw';
+        particle.style.top = Math.random() * 100 + 'vh';
+        particle.style.animationDuration = 2 + Math.random() * 3 + 's';
+        container.appendChild(particle);
+      }
+    };
+
+    createParticles(150);
+
+    // Anime.js for rotating Bhairav head and glowing effects
+    anime({
+      targets: '#bhairav-head',
+      rotate: '',
+      easing: 'easeInOutQuad',
+      duration: 8000, 
+    });
+
+    anime({
+      targets: '#bhairav-head',
+      filter: [
+        'drop-shadow(0 0 15px #ff4501)',
+        'drop-shadow(0 0 30px #ff6347)',
+        'drop-shadow(0 0 45px #ff7f50)',
+      ],
+      easing: 'easeInOutSine',
+      duration: 400,
+      direction: 'alternate',
+      loop: true,
+    });
+
+    // Circular energy waves expanding outwards
+    const createCircleWave = (x, y) => {
+      const circle = document.createElement('div');
+      circle.style.position = 'absolute';
+      circle.style.border = '10px solid rgba(255, 69, 0, 0.4)';
+      circle.style.borderRadius = '50%';
+      circle.style.width = '0px';
+      circle.style.height = '0px';
+      circle.style.left = `${x}px`;
+      circle.style.top = `${y}px`;
+      circle.style.transform = 'translate(-50%, -50%)';
+      circle.style.opacity = 0.5;
+      document.body.appendChild(circle);
+
+      anime({
+        targets: circle,
+        width: ['0px', '500px'],
+        height: ['0px', '500px'],
+        opacity: [0.5, 0],
+        easing: 'easeOutQuad',
+        duration: 2000,
+        complete: () => circle.remove(),
+      });
+    };
+
+    // Generate random waves at intervals
+    setInterval(() => {
+      const x = window.innerWidth / 2;
+      const y = window.innerHeight / 2;
+      createCircleWave(x, y);
+    }, 1000);
+
+    // Interactive effect on mouse move
+    document.body.addEventListener('mousemove', (e) => {
+      const x = e.clientX;
+      const y = e.clientY;
+      createCircleWave(x, y);
+    });
+  </script>
+</body>
+</html>
