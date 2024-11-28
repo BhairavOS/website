@@ -4,11 +4,11 @@
     <div class="home-hero">
       <div class="home-container11">
         <div class="home-card">
-          <h1 class="home-text10 HeadingOne">Soft Design System.</h1>
-          <h1 class="home-text11 HeadingOne">Choose the best</h1>
+          <h1 class="home-text10 HeadingOne">Bhairav</h1>
+          <h1 class="home-text11 HeadingOne">Power Your Potential </h1>
           <span class="home-text12 Lead">
             <span>
-              Find the story of Creative Tim&apos;s most complex design
+              Elevate your interface with BhairavOs - where elegance meets acceleration. 
               <span v-html="raw7zdb"></span>
             </span>
             <span>system and all the work that make this design available.</span>
